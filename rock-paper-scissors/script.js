@@ -8,12 +8,12 @@ function getComputerChoice() {
 function getHumanChoice() {
     let humanChoice = prompt(
         "Choose Rock, Paper, Scissors"
-    ).toUpperCase();
+    ).toLowerCase();
     
     if (
-        humanChoice != "ROCK" && 
-        humanChoice != "PAPER" && 
-        humanChoice != "SCISSORS"
+        humanChoice != "rock" && 
+        humanChoice != "paper" && 
+        humanChoice != "scissors"
     ) {
         alert(" Invalid choice! Please enter Rock, Paper, or Scissors.")
         return getHumanChoice(); // Ask again for valid choice
